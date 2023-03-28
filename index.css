@@ -1,0 +1,22 @@
+
+/* 清除缝隙 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* 清除浮动 */
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+img{
+    position: absolute;
+    left:50%;
+    /* 外边框-离左边距离180px */
+    margin-left: -180px;
+}
+
+
