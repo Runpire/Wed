@@ -4,19 +4,23 @@
 <head>
     <!-- ↓ 解决网页出现乱码的编码问题 -->
     <meta charset="UTF-8"> 
-    
+    <!-- ↓ a 超链接 的展示 -->
+    <!-- <base href="../Test/emoticon/" target="_blank"> -->
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- ↓ 实现电脑和手机之间的网页自适应 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- 链接网站图标 -->
+    <link rel="icon" href="../Test/img/princess_icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="index.css">
 
-    <title>Document</title>
+    <title>公主殿下的房间</title>
     <!-- ↓ 网页自动跳转 -->
     <!-- <meta http-equiv="refresh" content="5; https://blog.csdn.net/Runpire?spm=1011.2559.3001.5343"> -->
 
     <style type="text/css"> 
-        p{
+        h3{
             color: rgb(237, 108, 108);
             background: rgb(151, 179, 231);
             text-align: center;
@@ -25,14 +29,50 @@
             line-height: 32px;
         }
     </style>
+    <script type="text/javascript">
+        document.write("I love myself");
+    </script>
 
+    <!-- ① ↓ ；② 在 script 的 defer 属性:只用于外部链接，对内部链接不起作用 -->
+    <script type="text/javascript" src="index.js" defer> </script>
+   
 </head>
 <!-- 身体 -->
 <body>
 
-    <p>测试</p>
-    <img src="../Master/img/img.png" alt="404">
+    <h3>测试</h3>
+    <!-- 消除行内块元素因为换行产生的间距：元素连在一起放 -->
+    <img src="../Test/img/img1.png" alt="404" height="300px" width="250px"><img src="../Test/img/img2.png" alt="404" height="300px" width="250px">
+
+    <!-- 问题1：如何消除与相邻的元素右边产生的缝隙（间距） -->
+    <img src="../Test/img/img1.png" alt="404" height="300px" width="250px">
+    <img src="../Test/img/img2.png" alt="404" height="300px" width="250px">     
+
+    <!-- ↑ base 元素 效果展示 -->
+    <a href="1.webp">第一张图片</a>
+    <a href="2.webp">第二张图片</a>
+    <a href="3.webp">第三张图片</a>
     
+    <!-- 延迟脚本展示 -->
+    <p id="yanchi">JavaScript 延迟的效果展示</p>
+
+    <br>
+
+    <!-- 引用一大段文本 -->
+    <p>写作教材</p>
+    <blockquote>
+        <p>类人猿“是整个自然生态中的有机组成部分”类比到当今人类也是整个自然生态中的有机组成部分</p>
+        <p>但是，类人猿所处的时代和环境与当今人类所处的时代和环境显然不同，而且两者与自然之间的关系也不同：</p>
+        <p>类人猿与自然的关系是敬畏自然，</p>
+        <p>人类与自然的关系是和谐共处</p>
+        <p>因此，类人猿和当今人类并不具有稳固的类比基础。</p>
+    </blockquote>
+
+
+
+    <!-- ① 将脚本方式需要延迟效果的元素下面再被加载 -->
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+
 </body>
 
 </html>

@@ -12,11 +12,4 @@
     clear: both;
 }
 
-img{
-    position: absolute;
-    left:50%;
-    /* 外边框-离左边距离180px */
-    margin-left: -180px;
-}
-
 
